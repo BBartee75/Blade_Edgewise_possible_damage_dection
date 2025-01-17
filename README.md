@@ -44,9 +44,6 @@ Edgewise vibrations happen when wind turbine blades move up and down in a certai
 
 Edgewise vibrations in wind turbine blades is a complex phenomenon which may be caused during periods in which the turbine is experiencing a yaw error (difference between nacelle heading and dominant wind direction) greater than 15 degrees during operation.  By summing the operational time during these periods, it is possible to determine the exposure of each turbine to this possible blade damage mechanism.   
 
-- Table 1 describes the parameter filters used to evaluate each 10-minute time stamp in the dataset against the 15 degree yaw error threshold...
-- ![Alt text](https://github.com/BBartee75/Blade_Edgewise_possible_damage_dection/blob/main/Screenshot%202025-01-17%20123612.jpg)
-
 ## So what does this Python Script do?
 I take a very highlevel apporach to use 10 min data (note: this would be better with high resultion data). I use the 10 min data to analyze the possibilty of a wind turbine blade in is a condtion that could cuase edgewise damage.
 
@@ -55,6 +52,8 @@ I take a very highlevel apporach to use 10 min data (note: this would be better 
 This repository contains code for analyzing wind turbine data focusing on Edgewise conditions. We'll go through the key steps and considerations in this analysis.
 
 ### 1. Data Retrieval and Filtering
+- Table 1 describes the functions used to evaluate each 10-minute time stamp in the dataset against the 15 degree yaw error threshold...
+- ![Alt text](https://github.com/BBartee75/Blade_Edgewise_possible_damage_dection/blob/main/Screenshot%202025-01-17%20123612.jpg)
 
 We pull data from SQL Server, examining the following data points:
 
